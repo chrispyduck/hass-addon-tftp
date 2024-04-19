@@ -18,3 +18,25 @@ options:
 schema:
   message: "str?"
 image: "ghcr.io/home-assistant/{arch}-addon-example"
+
+---
+name: "TFTP server"
+description: "Simple tftp server"
+version: "0.1.0"
+slug: "tftp"
+init: false
+arch:
+  - "aarch64"
+  - "amd64"
+  - "armhf"
+  - "armv7"
+  - "i386"
+map:
+  - share:rw
+ports:
+  69/udp: 69
+image: "ghcr.io/chrispyduck/{arch}-addon-tftp"
+options:
+  message: "Starting..."
+schema:
+  message: "str?"

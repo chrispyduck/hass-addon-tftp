@@ -1,0 +1,4 @@
+configuration:
+  starting:
+    name: Starting
+    description: The message that will be printed to the log when starting this add-on.

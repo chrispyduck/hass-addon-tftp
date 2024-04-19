@@ -13,7 +13,11 @@ declare message
 message=$(bashio::config 'message')
 
 ## Print the message the user supplied, defaults to "Hello World..."
-bashio::log.info "${message:="Hello World..."}"
+bashio::log.info "${message:="Starting..."}"
 
 ## Run your program
-exec /usr/bin/my_program
+echo "Starting server."
+echo "Sharing files:"
+ls /share/tftp
+
+in.tftpd -L --secure /share/tftp
