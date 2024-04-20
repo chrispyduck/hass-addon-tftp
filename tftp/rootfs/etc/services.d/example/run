@@ -17,7 +17,9 @@ bashio::log.info "${message:="Starting..."}"
 
 ## Run your program
 echo "Starting server."
-echo "Sharing files:"
-ls /share/tftp
+set -x
+mount
+pwd
+ls -al
 
 in.tftpd -L --secure /share/tftp
