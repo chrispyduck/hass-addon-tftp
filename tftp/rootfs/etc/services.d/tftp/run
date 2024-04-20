@@ -20,6 +20,6 @@ echo "Starting server."
 set -x
 mount
 pwd
-ls -al
+ls -al /share
 
 in.tftpd -L --secure /share/tftp

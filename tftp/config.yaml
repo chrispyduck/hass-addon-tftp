@@ -1,6 +1,6 @@
 name: "TFTP server"
 description: "Simple tftp server"
-version: "0.1.1"
+version: "0.1.2"
 slug: "tftp"
 init: false
 arch:
@@ -14,7 +14,3 @@ map:
 ports:
   69/udp: 69
 image: "ghcr.io/chrispyduck/{arch}-addon-tftp"
-options:
-  message: "Starting..."
-schema:
-  message: "str?"
